@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+
+<div class="container py-5">
+  <h2 class="mb-4 text-center">Students List</h2>
+  <div class="row g-4">
+    <% students.forEach(function(student) { %>
+      <div class="col-12 col-sm-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h5 class="mb-0"><%= student.name %></h5>
+          </div>
+          <div class="card-body">
+            <p><strong>Roll No:</strong> <%= student.rollNo %></p>
+            <p><strong>Course:</strong> <%= student.course %></p>
+            <p><strong>Batch:</strong> <%= student.batch %></p>
+          </div>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

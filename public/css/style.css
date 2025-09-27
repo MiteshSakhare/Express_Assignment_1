@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Add minimal shadow on cards */
+.card {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
